@@ -1,8 +1,8 @@
 /** @type {const} */
 const themeColors = {
-  primary: { light: '#0a7ea4', dark: '#0a7ea4' },
+  primary: { light: '#8B5CF6', dark: '#A78BFA' },
   background: { light: '#ffffff', dark: '#151718' },
-  surface: { light: '#f5f5f5', dark: '#1e2022' },
+  surface: { light: '#F9FAFB', dark: '#1E2022' },
   foreground: { light: '#11181C', dark: '#ECEDEE' },
   muted: { light: '#687076', dark: '#9BA1A6' },
   border: { light: '#E5E7EB', dark: '#334155' },
