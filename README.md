@@ -1,53 +1,53 @@
-# NEUROSHOP
+# 👔 NEUROSHOP - Fashion That Fits Your Body & Soul
 
-**Bedenine ve Ruhuna Uyan Moda**
+**AI-Powered Personalized Fashion Mobile Platform**
 
-NEUROSHOP, yapay zeka destekli kişiselleştirilmiş moda önerileri sunan bir mobil e-ticaret platformudur. Kullanıcıların fiziksel ölçülerini (boy, kilo, beden tipi) ve Big Five (OCEAN) kişilik özelliklerini analiz ederek, onlara en uygun kıyafetleri önerir.
-
----
-
-## 🎯 Özellikler
-
-### ✅ Tamamlanan Özellikler (MVP v1.0)
-
-- **Onboarding Akışı**: Kullanıcı karşılama, biyometrik veri toplama, kişilik testi ve özet ekranları
-- **Big Five Kişilik Testi**: 5 soruluk gizli OCEAN (Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) testi
-- **Fiziksel Profil**: Boy (140-210 cm), kilo (40-150 kg) ve beden tipi (Slim/Regular/Oversize) seçimi
-- **Profil Ekranı**: Kişilik skorlarının görsel gösterimi ve dominant özellik analizi
-- **Yerel Veri Saklama**: AsyncStorage ile cihazda güvenli profil saklama
-- **Modern UI/UX**: Mor tema (#8B5CF6), NativeWind (Tailwind CSS) ile responsive tasarım
-- **Haptic Feedback**: iOS/Android için dokunsal geri bildirim
-- **Backend API**: tRPC tabanlı type-safe API
-- **Veritabanı**: MySQL + Drizzle ORM ile ürün, kullanıcı ve psikoloji verileri
-
-### 🚧 Planlanan Özellikler
-
-- Ürün kataloğu ve listeleme
-- Neuro-Fit eşleştirme algoritması
-- Ürün detay sayfası
-- Eşleşme skoru açıklamaları
-- Favoriler ve sepet
-- Ödeme entegrasyonu
+NEUROSHOP is an AI-powered personalized fashion recommendation mobile e-commerce platform. It analyzes users' physical measurements (height, weight, body type) and Big Five (OCEAN) personality traits to recommend the most suitable clothing.
 
 ---
 
-## 🏗️ Teknik Stack
+## 🎯 Features
 
-### Frontend (Mobil Uygulama)
+### ✅ Completed Features (MVP v1.0)
+
+- **Onboarding Flow**: User welcome, biometric data collection, personality test, and summary screens
+- **Big Five Personality Test**: 5-question hidden OCEAN (Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) test
+- **Physical Profile**: Height (140-210 cm), weight (40-150 kg), and body type (Slim/Regular/Oversize) selection
+- **Profile Screen**: Visual representation of personality scores and dominant trait analysis
+- **Local Data Storage**: Secure profile storage on device with AsyncStorage
+- **Modern UI/UX**: Purple theme (#8B5CF6), responsive design with NativeWind (Tailwind CSS)
+- **Haptic Feedback**: Tactile feedback for iOS/Android
+- **Backend API**: tRPC-based type-safe API
+- **Database**: MySQL + Drizzle ORM for product, user, and psychology data
+
+### 🚧 Planned Features
+
+- Product catalog and listing
+- Neuro-Fit matching algorithm
+- Product detail page
+- Match score explanations
+- Favorites and cart
+- Payment integration
+
+---
+
+## 🏗️ Technology Stack
+
+### Frontend (Mobile App)
 - **Framework**: React Native 0.81 + Expo SDK 54
-- **Dil**: TypeScript 5.9
+- **Language**: TypeScript 5.9
 - **Styling**: NativeWind 4 (Tailwind CSS for React Native)
 - **Navigation**: Expo Router 6
 - **State Management**: React Context + AsyncStorage
-- **Animasyon**: react-native-reanimated 4.x
+- **Animation**: react-native-reanimated 4.x
 - **API Client**: tRPC + TanStack Query
 
 ### Backend
 - **API**: tRPC 11.7 (Type-safe API)
 - **Runtime**: Node.js 22 + Express
-- **Veritabanı**: MySQL 8
+- **Database**: MySQL 8
 - **ORM**: Drizzle ORM 0.44
-- **Auth**: OAuth 2.0 (opsiyonel)
+- **Auth**: OAuth 2.0 (optional)
 
 ### DevOps
 - **Package Manager**: pnpm 9.12
@@ -57,140 +57,140 @@ NEUROSHOP, yapay zeka destekli kişiselleştirilmiş moda önerileri sunan bir m
 
 ---
 
-## 📱 Ekranlar
+## 📱 Screens
 
-### 1. Onboarding Akışı
-- **Welcome Screen**: Uygulama tanıtımı ve başlangıç
-- **Biometric Screen**: Boy, kilo ve beden tipi girişi
-- **Personality Test**: 5 soruluk kişilik testi
-- **Summary Screen**: Profil özeti ve tamamlama
+### 1. Onboarding Flow
+- **Welcome Screen**: App introduction and start
+- **Biometric Screen**: Height, weight, and body type input
+- **Personality Test**: 5-question personality test
+- **Summary Screen**: Profile summary and completion
 
-### 2. Ana Ekranlar
-- **Home**: Kişiselleştirilmiş ürün önerileri (yakında)
-- **Profile**: Fiziksel bilgiler ve kişilik skorları
+### 2. Main Screens
+- **Home**: Personalized product recommendations (coming soon)
+- **Profile**: Physical information and personality scores
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
+## 🚀 Installation and Running
 
-### Gereksinimler
+### Requirements
 - Node.js 22+
 - pnpm 9+
-- MySQL 8+ (opsiyonel, backend için)
-- Expo Go uygulaması (mobil test için)
+- MySQL 8+ (optional, for backend)
+- Expo Go app (for mobile testing)
 
-### 1. Bağımlılıkları Yükleyin
+### 1. Install Dependencies
 ```bash
 pnpm install
 ```
 
-### 2. Veritabanını Hazırlayın (Opsiyonel)
+### 2. Prepare Database (Optional)
 ```bash
-# .env dosyasında DATABASE_URL'i ayarlayın
+# Set DATABASE_URL in .env file
 pnpm db:push
 ```
 
-### 3. Geliştirme Sunucusunu Başlatın
+### 3. Start Development Server
 ```bash
 pnpm dev
 ```
 
-Bu komut hem backend API'yi (port 3000) hem de Expo Metro bundler'ı (port 8081) başlatır.
+This command starts both the backend API (port 3000) and Expo Metro bundler (port 8081).
 
-### 4. Mobil Uygulamayı Test Edin
+### 4. Test Mobile App
 
-**iOS/Android (Fiziksel Cihaz veya Emülatör):**
-1. Expo Go uygulamasını indirin
-2. QR kodu tarayın veya şu komutu kullanın:
+**iOS/Android (Physical Device or Emulator):**
+1. Download Expo Go app
+2. Scan QR code or use this command:
 ```bash
 pnpm ios      # iOS simulator
 pnpm android  # Android emulator
 ```
 
 **Web:**
-Tarayıcınızda otomatik olarak açılır: `http://localhost:8081`
+Opens automatically in your browser: `http://localhost:8081`
 
 ---
 
-## 📂 Proje Yapısı
+## 📂 Project Structure
 
 ```
 neuroshop/
-├── app/                          # Expo Router ekranları
-│   ├── (tabs)/                   # Tab navigasyon
-│   │   ├── index.tsx            # Ana sayfa
-│   │   └── profile.tsx          # Profil ekranı
-│   ├── onboarding/              # Onboarding akışı
+├── app/                          # Expo Router screens
+│   ├── (tabs)/                   # Tab navigation
+│   │   ├── index.tsx            # Home page
+│   │   └── profile.tsx          # Profile screen
+│   ├── onboarding/              # Onboarding flow
 │   │   ├── index.tsx            # Welcome
-│   │   ├── biometric.tsx        # Fiziksel bilgiler
-│   │   ├── personality.tsx      # Kişilik testi
-│   │   └── summary.tsx          # Özet
+│   │   ├── biometric.tsx        # Physical information
+│   │   ├── personality.tsx      # Personality test
+│   │   └── summary.tsx          # Summary
 │   └── _layout.tsx              # Root layout
-├── components/                   # Yeniden kullanılabilir bileşenler
+├── components/                   # Reusable components
 │   ├── screen-container.tsx     # SafeArea wrapper
-│   └── ui/                      # UI bileşenleri
-├── lib/                         # Utility fonksiyonlar
+│   └── ui/                      # UI components
+├── lib/                         # Utility functions
 │   ├── onboarding-provider.tsx  # Onboarding context
-│   ├── theme-provider.tsx       # Tema yönetimi
+│   ├── theme-provider.tsx       # Theme management
 │   └── trpc.ts                  # API client
 ├── server/                      # Backend API
 │   ├── routers.ts               # tRPC routers
-│   ├── db.ts                    # Veritabanı fonksiyonları
+│   ├── db.ts                    # Database functions
 │   └── _core/                   # Core backend
-├── drizzle/                     # Veritabanı şeması
-│   └── schema.ts                # MySQL tabloları
-├── assets/                      # Görseller ve fontlar
+├── drizzle/                     # Database schema
+│   └── schema.ts                # MySQL tables
+├── assets/                      # Images and fonts
 │   └── images/
-│       └── icon.png             # Uygulama logosu
-├── __tests__/                   # Test dosyaları
-├── theme.config.js              # Tema renkleri
-├── tailwind.config.js           # Tailwind yapılandırması
-└── app.config.ts                # Expo yapılandırması
+│       └── icon.png             # App logo
+├── __tests__/                   # Test files
+├── theme.config.js              # Theme colors
+├── tailwind.config.js           # Tailwind configuration
+└── app.config.ts                # Expo configuration
 ```
 
 ---
 
-## 🧠 Big Five (OCEAN) Kişilik Modeli
+## 🧠 Big Five (OCEAN) Personality Model
 
-NEUROSHOP, kullanıcıların stil tercihlerini anlamak için Big Five kişilik modelini kullanır:
+NEUROSHOP uses the Big Five personality model to understand users' style preferences:
 
-| Özellik | Açıklama | Stil Etkisi |
-|---------|----------|-------------|
-| **Openness** (Açıklık) | Yeni deneyimlere açıklık, yaratıcılık | Yüksek → Özgün, renkli, deneysel stiller |
-| **Conscientiousness** (Sorumluluk) | Düzenlilik, planlılık | Yüksek → Klasik, düzenli, temiz görünüm |
-| **Extraversion** (Dışadönüklük) | Sosyallik, enerji | Yüksek → Parlak renkler, dikkat çekici |
-| **Agreeableness** (Uyumluluk) | İşbirlikçilik, empati | Yüksek → Sürdürülebilir, etik markalar |
-| **Neuroticism** (Duygusal Denge) | Duygusal hassasiyet | Yüksek → Rahat, yumuşak, saran kıyafetler |
+| Trait | Description | Style Impact |
+|-------|-------------|--------------|
+| **Openness** | Openness to new experiences, creativity | High → Original, colorful, experimental styles |
+| **Conscientiousness** | Organization, planning | High → Classic, organized, clean look |
+| **Extraversion** | Sociability, energy | High → Bright colors, attention-grabbing |
+| **Agreeableness** | Cooperation, empathy | High → Sustainable, ethical brands |
+| **Neuroticism** | Emotional sensitivity | High → Comfortable, soft, embracing clothes |
 
 ---
 
-## 🎨 Tasarım Sistemi
+## 🎨 Design System
 
-### Renkler
+### Colors
 ```javascript
-primary:    #8B5CF6 (Mor)
-background: #FFFFFF (Açık) / #151718 (Koyu)
-surface:    #F9FAFB (Açık) / #1E2022 (Koyu)
-foreground: #11181C (Açık) / #ECEDEE (Koyu)
-muted:      #687076 (Açık) / #9BA1A6 (Koyu)
-border:     #E5E7EB (Açık) / #334155 (Koyu)
+primary:    #8B5CF6 (Purple)
+background: #FFFFFF (Light) / #151718 (Dark)
+surface:    #F9FAFB (Light) / #1E2022 (Dark)
+foreground: #11181C (Light) / #ECEDEE (Dark)
+muted:      #687076 (Light) / #9BA1A6 (Dark)
+border:     #E5E7EB (Light) / #334155 (Dark)
 ```
 
-### Tipografi
-- **Başlıklar**: text-3xl (30px), font-bold
-- **Alt Başlıklar**: text-lg (18px), font-semibold
-- **Gövde**: text-base (16px), font-normal
-- **Küçük Metin**: text-sm (14px)
+### Typography
+- **Headings**: text-3xl (30px), font-bold
+- **Subheadings**: text-lg (18px), font-semibold
+- **Body**: text-base (16px), font-normal
+- **Small Text**: text-sm (14px)
 
 ---
 
-## 🧪 Test
+## 🧪 Testing
 
 ```bash
-# Tüm testleri çalıştır
+# Run all tests
 pnpm test
 
-# TypeScript kontrolü
+# TypeScript check
 pnpm check
 
 # Linting
@@ -199,64 +199,64 @@ pnpm lint
 
 ---
 
-## 📊 Veritabanı Şeması
+## 📊 Database Schema
 
-### Tablolar
+### Tables
 
-**users**: Kullanıcı hesapları  
-**user_personality_profiles**: OCEAN skorları ve fiziksel bilgiler  
-**products**: Ürün kataloğu  
-**product_psychology**: Ürün-kişilik eşleştirme verileri  
-**cart_items**: Sepet öğeleri  
-**orders**: Siparişler  
-**behavior_metrics**: Kullanıcı davranış analizi  
-
----
-
-## 🔒 Gizlilik
-
-- Kullanıcı profil verileri **sadece cihazda** (AsyncStorage) saklanır
-- Kişilik test sonuçları üçüncü taraflarla **paylaşılmaz**
-- Backend kullanımı **opsiyoneldir** (sadece ürün kataloğu için)
+**users**: User accounts  
+**user_personality_profiles**: OCEAN scores and physical information  
+**products**: Product catalog  
+**product_psychology**: Product-personality matching data  
+**cart_items**: Cart items  
+**orders**: Orders  
+**behavior_metrics**: User behavior analysis  
 
 ---
 
-## 🛠️ Geliştirme Notları
+## 🔒 Privacy
 
-### Stil Rehberi
-- NativeWind (Tailwind CSS) kullanın
-- `className` prop'u ile stillendirme yapın
-- Tema renklerini `theme.config.js` dosyasından kullanın
-- Tüm ekranları `ScreenContainer` ile sarın (SafeArea için)
+- User profile data is stored **only on device** (AsyncStorage)
+- Personality test results are **not shared** with third parties
+- Backend usage is **optional** (only for product catalog)
 
-### Navigasyon
-- Expo Router kullanılıyor (file-based routing)
-- Tab navigasyon: `app/(tabs)/`
-- Modal/Stack ekranlar: `app/` root'unda
+---
 
-### State Yönetimi
+## 🛠️ Development Notes
+
+### Style Guide
+- Use NativeWind (Tailwind CSS)
+- Style with `className` prop
+- Use theme colors from `theme.config.js` file
+- Wrap all screens with `ScreenContainer` (for SafeArea)
+
+### Navigation
+- Using Expo Router (file-based routing)
+- Tab navigation: `app/(tabs)/`
+- Modal/Stack screens: `app/` root
+
+### State Management
 - Onboarding: `OnboardingProvider` context
 - API: tRPC + TanStack Query
-- Yerel: AsyncStorage
+- Local: AsyncStorage
 
 ---
 
-## 📝 Lisans
+## 📝 License
 
-Bu proje özel bir projedir ve ticari kullanım için tasarlanmıştır.
-
----
-
-## 👥 Katkıda Bulunanlar
-
-NEUROSHOP, yapay zeka destekli kişiselleştirilmiş alışveriş deneyimi sunmak için geliştirilmiştir.
+MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 İletişim
+## 👥 Contributors
 
-Sorularınız için GitHub Issues kullanabilirsiniz.
+NEUROSHOP is developed to provide AI-powered personalized shopping experience.
 
 ---
 
-**NEUROSHOP** - Bedenine ve Ruhuna Uyan Moda 🧠👔
+## 📞 Contact
+
+You can use GitHub Issues for questions.
+
+---
+
+**NEUROSHOP** - Fashion That Fits Your Body & Soul 🧠👔
