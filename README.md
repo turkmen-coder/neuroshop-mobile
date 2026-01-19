@@ -1,3 +1,4 @@
+<img width="2752" height="1536" alt="image" src="https://github.com/user-attachments/assets/a3d1ebef-5f5a-4f1f-ae66-32ed31aed864" />
 # 👔 NEUROSHOP - Fashion That Fits Your Body & Soul
 
 **AI-Powered Personalized Fashion Mobile Platform**
